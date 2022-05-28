@@ -1,0 +1,23 @@
+Algoritmo "Calculo Fatorial"
+
+Var
+// Seção de Declarações das variáveis
+a,b: real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   b<-1
+   Escreva("Digite um número:")
+           Leia(a)
+           b<-1
+      se (a>0) entao
+         repita
+         b<- (b*a)
+         a<- (a-1)
+         até (a=1)
+         Escreva ("Valor fatorial:", b)
+       senao
+            Escreva("Digite apenas número com valores positivos")
+       fimse
+
+Fimalgoritmo
