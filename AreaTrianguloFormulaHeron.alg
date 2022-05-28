@@ -1,17 +1,17 @@
-Algoritmo "Calculo_Media2"
+Algoritmo "Calculo_Área_Triângulo_Fórmula_Heron"
 
 var
     a,b,c,area: real
     s,s1,s2,s3:real
 
 Inicio
-// Se��o de Comandos
+// Seção de Comandos
 
-escreva ("Digite o 1� lado: ")
+escreva ("Digite o 1º lado: ")
         leia(a)
-escreva ("Digite o 2� lado: ")
+escreva ("Digite o 2º lado: ")
         leia(b)
-escreva ("Digite o 3� lado: ")
+escreva ("Digite o 3º lado: ")
         leia(c)
 
         se (a > 0) e (b > 0) e (c > 0) entao
@@ -19,11 +19,18 @@ escreva ("Digite o 3� lado: ")
            s1 <- (s- a)
            s2 <- (s- b)
            s3 <- (s- c)
-
-           se (s1 > 0) e (s2 > 0) e (s3 > 0) entao
+              se (s1 > 0) e (s2 > 0) e (s3 > 0) entao
              area <- RaizQ(s* s1* s2* s3)
+             Escreva("Área do triângulo:", area)
+             
+             senao
+             escreva ("O triângulo digitado não existe")
+
              fimse
+             
+        senao
+             Escreva ("Digite apenas valores positivos")
         fimse
-Escreva("Area:", area)
 Fimalgoritmo
+
 
